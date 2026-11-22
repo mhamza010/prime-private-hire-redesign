@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101d2b">
+  <meta name="description" content="Book a reliable private hire or airport transfer with Prime Private Hire. Plan your journey with a simple online quote request.">
+  <title>Prime Private Hire | Travel, Made Simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER: Replace the phone number and navigation URLs with the live WordPress pages. -->
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Private travel, planned around you.</span>
+        <div class="topbar-links">
+          <a href="#help">Need help?</a>
+          <a href="tel:+44 7445 131239">Call our team: <strong>+44 7445 131239</strong></a>
+        </div>
+      </div>
+    </div>
+    <div class="container nav-wrap">
+      <a class="brand" href="#" aria-label="Prime Private Hire home">
+        <span class="brand-mark">P</span>
+        <span class="brand-name">PRIME<span>PRIVATE HIRE</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#services">Our services</a>
+        <a href="#fleet">Our vehicles</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#about">Why Prime</a>
+        <a href="#help">Contact</a>
+        <a class="nav-cta" href="#booking">Get a quote <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO: The quote form is a visual front-end only until connected to the company's booking system. -->
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow light-eyebrow"><span></span> YOUR JOURNEY. OUR PRIORITY.</p>
+          <h1>Travel well.<br><em>Arrive better.</em></h1>
+          <p class="hero-lead">From airport transfers to everyday journeys, enjoy a straightforward private hire service that puts your plans first.</p>
+          <div class="hero-points">
+            <span><b>✓</b> Easy journey planning</span>
+            <span><b>✓</b> Travel for business or leisure</span>
+          </div>
+        </div>
+
+        <div class="booking-card" id="booking">
+          <div class="booking-heading">
+            <div>
+              <p class="eyebrow">PLAN YOUR JOURNEY</p>
+              <h2>Get your journey started</h2>
+            </div>
+            <span class="booking-icon" aria-hidden="true">↗</span>
+          </div>
+          <form id="quote-form">
+            <div class="trip-type" role="group" aria-label="Journey type">
+              <label class="trip-option"><input type="radio" name="tripType" value="One way" checked><span>One way</span></label>
+              <label class="trip-option"><input type="radio" name="tripType" value="Return"><span>Return</span></label>
+            </div>
+            <div class="form-grid">
+              <label class="field field-full">
+                <span>Pick-up location</span>
+                <span class="input-wrap"><i class="pin-dot"></i><input name="pickup" type="text" placeholder="Enter pick-up address" required></span>
+              </label>
+              <label class="field field-full">
+                <span>Drop-off location</span>
+                <span class="input-wrap"><i class="pin-square"></i><input name="dropoff" type="text" placeholder="Enter destination" required></span>
+              </label>
+              <label class="field">
+                <span>Pick-up date</span>
+                <input name="date" type="date" required>
+              </label>
+              <label class="field">
+                <span>Pick-up time</span>
+                <input name="time" type="time" required>
+              </label>
+              <label class="field field-full">
+                <span>Passengers</span>
+                <select name="passengers">
+                  <option value="1">1 passenger</option><option value="2" selected>2 passengers</option>
+                  <option value="3">3 passengers</option><option value="4">4 passengers</option>
+                  <option value="5">5 passengers</option><option value="6">6 passengers</option>
+                  <option value="7">7 passengers</option><option value="8">8 passengers</option>
+                </select>
+              </label>
+            </div>
+            <button class="button button-gold button-full" type="submit">Request a quote <span>→</span></button>
+            <p class="form-note">A few details are all we need to get things moving.</p>
+            <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span>PRIVATE HIRE</span><span class="hero-line"></span><span>AIRPORT TRANSFERS</span><span class="hero-line"></span><span>BUSINESS TRAVEL</span>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Service highlights">
+      <div class="container trust-grid">
+        <div class="trust-item"><span class="trust-symbol">✦</span><div><strong>Made simple</strong><small>A clear, easy booking journey</small></div></div>
+        <div class="trust-item"><span class="trust-symbol">◷</span><div><strong>Plan ahead</strong><small>Arrange travel around your schedule</small></div></div>
+        <div class="trust-item"><span class="trust-symbol">⌖</span><div><strong>Door to door</strong><small>From your pick-up to your destination</small></div></div>
+        <div class="trust-item"><span class="trust-symbol">♧</span><div><strong>Here to help</strong><small>Support when you need it</small></div></div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-intro">
+          <div><p class="eyebrow"><span></span> TRAVEL YOUR WAY</p><h2>One service.<br><em>Many ways to travel.</em></h2></div>
+          <p>Whether you're catching a flight, heading to a meeting or making a special occasion even better, choose the journey that works for you.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card service-airport">
+            <div class="service-image"><span class="service-number">01</span></div>
+            <div class="service-body"><p class="card-kicker">FOR SMOOTHER TRAVEL DAYS</p><h3>Airport transfers</h3><p>Take the stress out of getting to or from the airport. Plan your pick-up and destination in advance.</p><a href="#booking" class="text-link">Plan an airport journey <span>→</span></a></div>
+          </article>
+          <article class="service-card service-private">
+            <div class="service-image"><span class="service-number">02</span></div>
+            <div class="service-body"><p class="card-kicker">FOR EVERYDAY JOURNEYS</p><h3>Private hire</h3><p>A convenient ride for appointments, days out, visits and the places you need to be.</p><a href="#booking" class="text-link">Arrange your journey <span>→</span></a></div>
+          </article>
+          <article class="service-card service-business">
+            <div class="service-image"><span class="service-number">03</span></div>
+            <div class="service-body"><p class="card-kicker">FOR WORK AND EVENTS</p><h3>Business travel</h3><p>Make business travel easier to organise, whether it's one journey or regular travel requirements.</p><a href="#help" class="text-link">Talk about business travel <span>→</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="about-photo"></div>
+          <div class="photo-note"><span class="note-icon">P</span><div><strong>Prime Private Hire</strong><small>Your journey starts here</small></div></div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow light-eyebrow"><span></span> THE PRIME DIFFERENCE</p>
+          <h2>A better journey<br>starts with <em>the details.</em></h2>
+          <p class="about-lead">Good travel should feel simple from the first click. We want every part of arranging your journey to be clear, convenient and centred on what you need.</p>
+          <div class="benefit-list">
+            <div><span>01</span><p><strong>Clear journey details</strong><small>Tell us where and when you need to travel.</small></p></div>
+            <div><span>02</span><p><strong>Options for different journeys</strong><small>From airport travel to business and personal trips.</small></p></div>
+            <div><span>03</span><p><strong>Help when you need it</strong><small>Get in touch with the team about your requirements.</small></p></div>
+          </div>
+          <a href="#help" class="button button-outline">Speak to our team <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="how-it-works">
+      <div class="container">
+        <div class="center-intro"><p class="eyebrow"><span></span> SIMPLE FROM THE START</p><h2>Three steps to your <em>next journey.</em></h2><p>We've kept the process clear, so you can focus on where you're going.</p></div>
+        <div class="steps-grid">
+          <article class="step"><span class="step-no">01</span><div class="step-icon">⌕</div><h3>Share your journey</h3><p>Enter your pick-up, destination and travel details in the quote form.</p></article>
+          <article class="step"><span class="step-no">02</span><div class="step-icon">↗</div><h3>Confirm the details</h3><p>Our team or booking system can help confirm the right option for your trip.</p></article>
+          <article class="step"><span class="step-no">03</span><div class="step-icon">✦</div><h3>Get ready to go</h3><p>Keep your journey information handy and look forward to your travel day.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="fleet-section" id="fleet">
+      <div class="container fleet-grid">
+        <div class="fleet-copy"><p class="eyebrow"><span></span> THE RIGHT RIDE FOR YOU</p><h2>Space for your<br><em>kind of journey.</em></h2><p>Different journeys call for different vehicles. Let us know how many people are travelling and how much luggage you have when you request your quote.</p><a href="#booking" class="button button-dark">Find your journey <span>→</span></a></div>
+        <div class="fleet-visual"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85" alt="Premium dark vehicle parked on a quiet road"><div class="fleet-caption"><span>TRAVEL, YOUR WAY</span><strong>Comfort starts with the right details.</strong></div></div>
+      </div>
+    </section>
+
+    <section class="faq-section section">
+      <div class="container faq-grid">
+        <div><p class="eyebrow"><span></span> GOOD TO KNOW</p><h2>Questions?<br><em>We've got you.</em></h2><p class="faq-intro">Here are a few things you may want to know before arranging your journey.</p><a href="#help" class="text-link">Ask us a question <span>→</span></a></div>
+        <div class="faq-list">
+          <details><summary>How do I request a quote?<span>+</span></summary><p>Use the journey form at the top of this page. Add your pick-up, destination, date, time and passenger details, then submit your request.</p></details>
+          <details><summary>Can I arrange an airport transfer?<span>+</span></summary><p>Yes. Choose your airport as the pick-up or drop-off location and share your travel details. Contact the team if you have flight or meet-and-greet requirements.</p></details>
+          <details><summary>Can I ask about a larger vehicle?<span>+</span></summary><p>Yes. Include your passenger and luggage requirements in your enquiry so the team can advise on suitable options.</p></details>
+          <details><summary>Do you take business bookings?<span>+</span></summary><p>For business or repeat travel requirements, contact the team and explain what kind of journeys you need to arrange.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-band" id="help">
+      <div class="container contact-inner"><div><p class="eyebrow light-eyebrow"><span></span> LET'S GET YOU MOVING</p><h2>Your next journey<br>is just a <em>conversation away.</em></h2></div><div class="contact-action"><p>Need help with a booking or have a question about your journey?</p><a class="button button-gold" href="mailto:REPLACE-WITH-REAL-EMAIL">Contact Prime Private Hire <span>→</span></a><small>Replace this email link with the company's real contact address.</small></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand brand-footer" href="#"><span class="brand-mark">P</span><span class="brand-name">PRIME<span>PRIVATE HIRE</span></span></a>
+      <p>Private travel, planned around you.</p>
+      <div class="footer-links"><a href="#services">Services</a><a href="#fleet">Vehicles</a><a href="#about">About</a><a href="#help">Contact</a><a href="#">Privacy policy</a><a href="#">Terms & conditions</a></div>
+      <div class="footer-contact"><a href="tel:+44 7445131239">+44 7445 131239</a><a href="mailto:REPLACE-WITH-REAL-EMAIL">REPLACE-WITH-REAL-EMAIL</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Prime Private Hire. All rights reserved.</span><span>Designed for a smoother journey.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
